@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <style>
+        :root{
+            --main-font:'Lucida Sans';
+            --color1:#da1b60;
+            --color2: #1f1919;
+            --color3:#c7aeae;
+        }
+        body
+        {
+            background-color: var(--color3);
+        }
+        .rlbl
+        {
+            font-family: var(--main-font);
+            font-size: 20px;
+            float: left;
+            line-height: 2em;
+            margin-right: -20px;
+            padding-right: 25px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px; 
+            background-image: linear-gradient(to right, var(--color1),#ffffff);
+            padding-inline-start: 15px; 
+            color: white;
+        }
+
+        .input
+        {
+            border: 0;
+            height: 2em;
+            width: 25em;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px; 
+            font-family: var(--main-font);
+            font-size: 20px;
+            float: left;
+            color:rgb(73, 73, 73);
+            padding-inline-start: 15px;     
+            box-shadow: 0 17px 50px 0 rgba(0,0,0,.19), 0 12px 15px 0 rgba(0,0,0,.24);
+                   
+        }
+        .input:focus
+        {
+            background-image: linear-gradient(to left, #ffffff,var(--color1));
+            outline:none;
+            color: white;
+        }
+        .rbutton
+        {
+            border: 0;
+            height: 2em;
+            width: 10em;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px; 
+            font-family: var(--main-font);
+            font-size: 20px;              
+            background-image: linear-gradient(to right,#ffffff,var(--color1));
+            float: left;
+            color:white;
+        }
+        
+        .input>option
+        {
+            border: 0;
+            height: 2em;
+            width: 25em;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px; 
+            font-family: var(--main-font);
+            font-size: 20px;
+            float: left;
+            color:rgb(73, 73, 73);
+            padding-inline-start: 15px;     
+            box-shadow: 0 17px 50px 0 rgba(0,0,0,.19), 0 12px 15px 0 rgba(0,0,0,.24);
+        }
+       
+    </style>
+
+</head>
+<body>
+    <label class="rlbl">
+        Name
+    </label>
+    <input type="text" class="input" value="Mazhar" />
+    <input type="button" class="rbutton" value="Click" />    
+
+    <select class="input">
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+    </select>
+
+
+</body>
+
+</html>
